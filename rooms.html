@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>客室紹介 - 福山ロイヤルホテル</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.29.0/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="fukuyama_royal.css">
+<style>
+.rdetail{border:1px solid #E8E5E0;margin-bottom:28px;overflow:hidden}
+.rdh{background:#1A1614;color:#fff;padding:12px 18px;font-size:19px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:300;letter-spacing:.5px}
+.badge{background:#B8960C;color:#fff;font-size:13px;padding:2px 9px;font-weight:400}
+.badge-dt{background:#1C3A5C;color:rgba(255,255,255,.85);font-size:13px;padding:2px 9px}
+.room-body{display:grid;grid-template-columns:1fr 1fr}
+.room-left{border-right:1px solid #E8E5E0}
+.rcaro{position:relative;background:#111}
+.slides{height:220px;position:relative;overflow:hidden}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .45s ease}
+.slide.on{opacity:1}
+.slide img{width:100%;height:220px;object-fit:cover;display:block;background:#2A2A2A}
+.slide-ph{width:100%;height:220px;background:#2A2A2A;display:flex;align-items:center;justify-content:center;color:#555;font-size:12px;letter-spacing:1px;flex-direction:column;gap:6px}
+.slide-ph i{font-size:28px;color:#444}
+.cbtn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.42);color:#fff;border:none;width:36px;height:54px;font-size:18px;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.cbtn:hover{background:rgba(28,58,92,.8)}
+.cprev{left:0}.cnext{right:0}
+.rdots{background:#1A1614;display:flex;justify-content:center;gap:8px;padding:10px}
+.dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.2);border:none;cursor:pointer;padding:0;transition:background .2s,transform .2s}
+.dot.on{background:#B8960C;transform:scale(1.3)}
+.dot:hover{background:rgba(255,255,255,.55)}
+.rinfo{padding:16px 18px;display:flex;flex-direction:column;justify-content:space-between}
+.rspec{display:grid;grid-template-columns:auto 1fr;margin-bottom:12px;border:1px solid #E8E5E0;border-collapse:collapse;width:100%}
+.rspec dt{font-size:12px;color:#AAA;font-weight:300;padding:6px 8px;border-bottom:1px solid #E8E5E0;border-right:1px solid #E8E5E0;background:#FAFAF8;white-space:nowrap}
+.rspec dd{font-size:14px;color:#444;padding:6px 8px;border-bottom:1px solid #E8E5E0;margin:0}
+.rspec dt:nth-last-child(2),.rspec dd:last-child{border-bottom:none}
+.rdesc{font-size:15px;line-height:1.8;color:#555;font-weight:300;margin-bottom:12px;flex:1}
+.planbtn{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;background:#BF0000;color:#fff;font-size:15px;letter-spacing:1px;font-weight:300;text-decoration:none}
+.planbtn i{font-size:18px}
+.atbl{width:100%;font-size:17px;border-collapse:collapse}
+.atbl td{padding:7px 12px;border:1px solid #E8E5E0}
+.atbl tr:nth-child(even) td{background:#FAFAF8}
+.albl{background:#1A1614;color:#fff;font-size:14px;padding:7px 12px;letter-spacing:2px;font-weight:300}
+.atbl td:first-child{color:#AAA;font-size:14px;white-space:nowrap;font-weight:300;width:95px}
+.hl{background:#FAFAF8;border:1px solid #E8E5E0;border-left:3px solid #B8960C;padding:16px 18px;margin-bottom:18px}
+.hl h3{font-size:20px;font-weight:400;color:#333;margin-bottom:10px}
+.hl p{font-size:17px;color:#555;line-height:1.8;font-weight:300}
+.hl .cs{border-top:1px solid #E8E5E0;margin-top:12px;padding-top:12px}
+.hl .cs h4{font-size:14px;font-weight:400;letter-spacing:2px;color:#B8960C;margin-bottom:8px;font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+.hl .cs li{font-size:16px;color:#555;padding:3px 0;font-weight:300;list-style:none;display:flex;gap:8px}
+.hl .cs li::before{content:"—";color:#B8960C}
+</style>
+</head>
+<body style="margin:0;background:#F5F4F0">
+<div id="rh01">
+
+<div class="nv">
+  <a href="[HOME_PAGE_URL]"><span class="e">HOME</span><span class="j">ホーム</span></a>
+  <a class="on"><span class="e">ROOMS</span><span class="j">客室紹介</span></a>
+  <a href="[DINING_PAGE_URL]"><span class="e">DINING</span><span class="j">朝食夕食</span></a>
+  <a href="[FACILITIES_PAGE_URL]"><span class="e">FACILITIES</span><span class="j">館内設備</span></a>
+  <a href="[ACCESS_PAGE_URL]"><span class="e">ACCESS</span><span class="j">アクセス</span></a>
+  <a href="[PLANLIST_URL]"><span class="e">PLANS</span><span class="j">宿泊プラン</span></a>
+</div>
+
+<div class="mv">
+  <img src="img/rooms_main.jpg" alt="客室" style="height:380px;width:100%;object-fit:cover;display:block;background:#EBEBEB">
+  <div class="mvc"><h2>ROOMS</h2><p>ご宿泊スタイルに合わせてお選びいただける9種類のお部屋（全室禁煙）</p></div>
+</div>
+
+<div class="sec">
+  <div class="hl">
+    <h3>9種類のお部屋をご用意しております（全室禁煙）</h3>
+    <p>ビジネス・ご家族、大切な方とのご旅行など、ご宿泊の目的に合わせてお選びいただける9種類のお部屋をご準備しております。</p>
+    <div class="cs">
+      <h4>COMMON SERVICE　各部屋共通のサービス</h4>
+      <ul>
+        <li>ミネラルウォーター500ml 1本サービス</li>
+        <li>全室無料Wi-Fi ＆ 枕元コンセント設置</li>
+        <li>普通車駐車場無料</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="rdetail">
+    <div class="rdh">スーペリアバス付シングル <span class="badge">2024年9月 改装</span></div>
+    <div class="room-body">
+      <div class="room-left">
+        <div class="rcaro" id="r01" data-cur="0">
+          <div class="slides"><div class="slide on"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r01_01.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r01_02.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r01_03.jpg</span></div></div></div>
+          <button class="cbtn cprev" onclick="mv('r01',-1)" aria-label="前の写真"><i class="ti ti-chevron-left"></i></button>
+          <button class="cbtn cnext" onclick="mv('r01',1)" aria-label="次の写真"><i class="ti ti-chevron-right"></i></button>
+        </div>
+        <div class="rdots" id="r01-dots"><button class="dot on" onclick="go('r01',0)"></button><button class="dot" onclick="go('r01',1)"></button><button class="dot" onclick="go('r01',2)"></button></div>
+      </div>
+      <div class="rinfo">
+        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>11㎡</dd><dt>ベッド</dt><dd>セミダブル（120cm）×1台</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
+        <p class="rdesc">2024年9月リニューアル。セミダブルベッド（120cm）設置。清潔感あふれる空間でゆっくりとおくつろぎください。お二人でのご宿泊も可能です。</p>
+        <a class="planbtn" href="[PLANLIST_URL]"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rdetail">
+    <div class="rdh">モデレートバス付シングル </div>
+    <div class="room-body">
+      <div class="room-left">
+        <div class="rcaro" id="r02" data-cur="0">
+          <div class="slides"><div class="slide on"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r02_01.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r02_02.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r02_03.jpg</span></div></div></div>
+          <button class="cbtn cprev" onclick="mv('r02',-1)" aria-label="前の写真"><i class="ti ti-chevron-left"></i></button>
+          <button class="cbtn cnext" onclick="mv('r02',1)" aria-label="次の写真"><i class="ti ti-chevron-right"></i></button>
+        </div>
+        <div class="rdots" id="r02-dots"><button class="dot on" onclick="go('r02',0)"></button><button class="dot" onclick="go('r02',1)"></button><button class="dot" onclick="go('r02',2)"></button></div>
+      </div>
+      <div class="rinfo">
+        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>11㎡</dd><dt>ベッド</dt><dd>セミダブル×1台</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
+        <p class="rdesc">ビジネスや一人旅に最適なシングルルーム。バス付きで快適にお過ごしいただけます。</p>
+        <a class="planbtn" href="[PLANLIST_URL]"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rdetail">
+    <div class="rdh">バス付シングル </div>
+    <div class="room-body">
+      <div class="room-left">
+        <div class="rcaro" id="r03" data-cur="0">
+          <div class="slides"><div class="slide on"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r03_01.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r03_02.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r03_03.jpg</span></div></div></div>
+          <button class="cbtn cprev" onclick="mv('r03',-1)" aria-label="前の写真"><i class="ti ti-chevron-left"></i></button>
+          <button class="cbtn cnext" onclick="mv('r03',1)" aria-label="次の写真"><i class="ti ti-chevron-right"></i></button>
+        </div>
+        <div class="rdots" id="r03-dots"><button class="dot on" onclick="go('r03',0)"></button><button class="dot" onclick="go('r03',1)"></button><button class="dot" onclick="go('r03',2)"></button></div>
+      </div>
+      <div class="rinfo">
+        <dl class="rspec"><dt>定員</dt><dd>1名</dd><dt>ベッド</dt><dd>シングル×1台</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
+        <p class="rdesc">シンプルながらも必要な設備を完備したシングルルーム。ビジネス・一人旅に最適です。</p>
+        <a class="planbtn" href="[PLANLIST_URL]"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rdetail">
+    <div class="rdh">バス無シングル </div>
+    <div class="room-body">
+      <div class="room-left">
+        <div class="rcaro" id="r04" data-cur="0">
+          <div class="slides"><div class="slide on"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r04_01.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r04_02.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r04_03.jpg</span></div></div></div>
+          <button class="cbtn cprev" onclick="mv('r04',-1)" aria-label="前の写真"><i class="ti ti-chevron-left"></i></button>
+          <button class="cbtn cnext" onclick="mv('r04',1)" aria-label="次の写真"><i class="ti ti-chevron-right"></i></button>
+        </div>
+        <div class="rdots" id="r04-dots"><button class="dot on" onclick="go('r04',0)"></button><button class="dot" onclick="go('r04',1)"></button><button class="dot" onclick="go('r04',2)"></button></div>
+      </div>
+      <div class="rinfo">
+        <dl class="rspec"><dt>定員</dt><dd>1名</dd><dt>ベッド</dt><dd>シングル×1台</dd><dt>バス</dt><dd>共用シャワーブース（3F）</dd></dl>
+        <p class="rdesc">リーズナブルにご宿泊いただけるバス無しタイプ。3階の共用シャワーブース（男女別・2022年リニューアル）をご利用ください。</p>
+        <a class="planbtn" href="[PLANLIST_URL]"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rdetail">
+    <div class="rdh">リニューアルツイン <span class="badge">2024年9月 改装</span></div>
+    <div class="room-body">
+      <div class="room-left">
+        <div class="rcaro" id="r05" data-cur="0">
+          <div class="slides"><div class="slide on"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r05_01.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r05_02.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r05_03.jpg</span></div></div></div>
+          <button class="cbtn cprev" onclick="mv('r05',-1)" aria-label="前の写真"><i class="ti ti-chevron-left"></i></button>
+          <button class="cbtn cnext" onclick="mv('r05',1)" aria-label="次の写真"><i class="ti ti-chevron-right"></i></button>
+        </div>
+        <div class="rdots" id="r05-dots"><button class="dot on" onclick="go('r05',0)"></button><button class="dot" onclick="go('r05',1)"></button><button class="dot" onclick="go('r05',2)"></button></div>
+      </div>
+      <div class="rinfo">
+        <dl class="rspec"><dt>定員</dt><dd>2名</dd><dt>広さ</dt><dd>20㎡</dd><dt>ベッド</dt><dd>シングル（100cm）×2台</dd><dt>TV</dt><dd>43インチ壁掛け</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
+        <p class="rdesc">2024年9月リニューアル。43インチ大型壁掛けテレビ設置。ご家族・大切な方とのご旅行に最適な広々とした空間です。</p>
+        <a class="planbtn" href="[PLANLIST_URL]"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rdetail">
+    <div class="rdh">deTOURスーペリアツイン <span class="badge-dt">deTOUR 5F</span></div>
+    <div class="room-body">
+      <div class="room-left">
+        <div class="rcaro" id="r06" data-cur="0">
+          <div class="slides"><div class="slide on"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r06_01.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r06_02.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r06_03.jpg</span></div></div></div>
+          <button class="cbtn cprev" onclick="mv('r06',-1)" aria-label="前の写真"><i class="ti ti-chevron-left"></i></button>
+          <button class="cbtn cnext" onclick="mv('r06',1)" aria-label="次の写真"><i class="ti ti-chevron-right"></i></button>
+        </div>
+        <div class="rdots" id="r06-dots"><button class="dot on" onclick="go('r06',0)"></button><button class="dot" onclick="go('r06',1)"></button><button class="dot" onclick="go('r06',2)"></button></div>
+      </div>
+      <div class="rinfo">
+        <dl class="rspec"><dt>定員</dt><dd>2名</dd><dt>フロア</dt><dd>最上階 5F</dd><dt>ベッド</dt><dd>シングル×2台</dd><dt>床</dt><dd>フローリング</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
+        <p class="rdesc">こだわりの5Fフロア「deTOUR」のツインルーム。フローリング・空気清浄機・サロニアドライヤー・POLAアメニティ・バルミューダ電気ケトル完備。</p>
+        <a class="planbtn" href="[PLANLIST_URL]"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rdetail">
+    <div class="rdh">deTOURデラックスツイン <span class="badge-dt">deTOUR 5F</span> <span class="badge">バスタブ付き</span></div>
+    <div class="room-body">
+      <div class="room-left">
+        <div class="rcaro" id="r07" data-cur="0">
+          <div class="slides"><div class="slide on"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r07_01.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r07_02.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r07_03.jpg</span></div></div></div>
+          <button class="cbtn cprev" onclick="mv('r07',-1)" aria-label="前の写真"><i class="ti ti-chevron-left"></i></button>
+          <button class="cbtn cnext" onclick="mv('r07',1)" aria-label="次の写真"><i class="ti ti-chevron-right"></i></button>
+        </div>
+        <div class="rdots" id="r07-dots"><button class="dot on" onclick="go('r07',0)"></button><button class="dot" onclick="go('r07',1)"></button><button class="dot" onclick="go('r07',2)"></button></div>
+      </div>
+      <div class="rinfo">
+        <dl class="rspec"><dt>定員</dt><dd>2名（3名可）</dd><dt>広さ</dt><dd>30㎡（当館最大）</dd><dt>ベッド</dt><dd>シングル（100cm）×2台</dd><dt>バス</dt><dd>独立バスルーム（バスタブ付き）</dd><dt>フロア</dt><dd>最上階 5F</dd><dt>床</dt><dd>フローリング</dd></dl>
+        <p class="rdesc">当館最上階（5F）の最大のお部屋。独立バスルームでゆっくりとご入浴いただけます。フローリング仕様でご自宅のようにおくつろぎください。空気清浄機・バルミューダ電気ケトル・POLAアメニティ完備。</p>
+        <a class="planbtn" href="[PLANLIST_URL]"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rdetail">
+    <div class="rdh">deTOURモデレートダブル <span class="badge-dt">deTOUR 5F</span></div>
+    <div class="room-body">
+      <div class="room-left">
+        <div class="rcaro" id="r08" data-cur="0">
+          <div class="slides"><div class="slide on"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r08_01.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r08_02.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r08_03.jpg</span></div></div></div>
+          <button class="cbtn cprev" onclick="mv('r08',-1)" aria-label="前の写真"><i class="ti ti-chevron-left"></i></button>
+          <button class="cbtn cnext" onclick="mv('r08',1)" aria-label="次の写真"><i class="ti ti-chevron-right"></i></button>
+        </div>
+        <div class="rdots" id="r08-dots"><button class="dot on" onclick="go('r08',0)"></button><button class="dot" onclick="go('r08',1)"></button><button class="dot" onclick="go('r08',2)"></button></div>
+      </div>
+      <div class="rinfo">
+        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>フロア</dt><dd>最上階 5F</dd><dt>ベッド</dt><dd>ダブル×1台</dd><dt>床</dt><dd>フローリング</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
+        <p class="rdesc">5Fのこだわりフロア「deTOUR」のダブルルーム。フローリング・空気清浄機・サロニアドライヤー・POLAアメニティ・バルミューダ電気ケトルでワンランク上の滞在を。</p>
+        <a class="planbtn" href="[PLANLIST_URL]"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rdetail">
+    <div class="rdh">deTOURデラックスシングル <span class="badge-dt">deTOUR 5F</span></div>
+    <div class="room-body">
+      <div class="room-left">
+        <div class="rcaro" id="r09" data-cur="0">
+          <div class="slides"><div class="slide on"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r09_01.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r09_02.jpg</span></div></div><div class="slide"><div class="slide-ph"><i class="ti ti-photo" aria-hidden="true"></i><span>img/r09_03.jpg</span></div></div></div>
+          <button class="cbtn cprev" onclick="mv('r09',-1)" aria-label="前の写真"><i class="ti ti-chevron-left"></i></button>
+          <button class="cbtn cnext" onclick="mv('r09',1)" aria-label="次の写真"><i class="ti ti-chevron-right"></i></button>
+        </div>
+        <div class="rdots" id="r09-dots"><button class="dot on" onclick="go('r09',0)"></button><button class="dot" onclick="go('r09',1)"></button><button class="dot" onclick="go('r09',2)"></button></div>
+      </div>
+      <div class="rinfo">
+        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>フロア</dt><dd>最上階 5F</dd><dt>ベッド</dt><dd>セミダブル×1台</dd><dt>床</dt><dd>フローリング</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
+        <p class="rdesc">5Fのこだわりフロア「deTOUR」のシングルルーム。フローリング・空気清浄機・サロニアドライヤー・POLAアメニティ・バルミューダ電気ケトルでワンランク上の滞在をお楽しみください。</p>
+        <a class="planbtn" href="[PLANLIST_URL]"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
+      </div>
+    </div>
+  </div>
+  <div class="sh" style="margin-top:8px"><span class="se">AMENITIES</span><span class="sj">標準客室設備・アメニティ</span></div>
+  <table class="atbl">
+    <tr><td class="albl" colspan="2">ROOM EQUIPMENT　客室設備</td></tr>
+    <tr><td>設備</td><td>温水洗浄機付トイレ／冷蔵庫／冷暖房／地デジTV／無料Wi-Fi／電気ポット／ドライヤー／ズボンプレッサー（貸出）</td></tr>
+    <tr><td class="albl" colspan="2">AMENITIES　アメニティ</td></tr>
+    <tr><td>室内</td><td>ボディタオル／バスタオル／シャンプー／ボディソープ／ドライヤー</td></tr>
+    <tr><td>バー</td><td>歯ブラシ・ヘアブラシ・スリッパ等 → 1階アメニティバーよりお選びください</td></tr>
+  </table>
+</div>
+
+<div class="bn">
+  <div class="bb"><span class="d">← PREV</span>ホームへ</div>
+  <div class="bb"><span class="d">NEXT →</span>朝食夕食</div>
+</div>
+<div class="btns">
+  <a href="[REVIEW_PAGE_URL]"><div class="ic"><i class="ti ti-message-circle" aria-hidden="true"></i></div><div><span class="be">GUEST REVIEWS</span><span class="bj">お客さまの声（785件）</span></div><span class="bta">›</span></a>
+  <a href="[PHOTO_PAGE_URL]"><div class="ic"><i class="ti ti-camera" aria-hidden="true"></i></div><div><span class="be">PHOTO GALLERY</span><span class="bj">フォトギャラリー（52枚）</span></div><span class="bta">›</span></a>
+</div>
+<div class="bs">
+  <div class="bsl">VACANCY SEARCH　空室・料金を検索</div>
+  <div class="bfr">
+    <div class="bf dt"><label>CHECK IN</label><input type="text" placeholder="yyyy/mm/dd"></div><span class="sp">→</span>
+    <div class="bf dt"><label>CHECK OUT</label><input type="text" placeholder="yyyy/mm/dd"></div>
+    <div class="bf sm"><label>ROOMS</label><select><option>1室</option><option>2室</option></select></div>
+    <div class="bf sm"><label>GUESTS</label><select><option>1名</option><option>2名</option><option>3名</option><option>4名</option></select></div>
+    <div class="bf md"><label>MIN ¥</label><select><option>下限なし</option><option>3,000〜</option><option>5,000〜</option></select></div><span class="sp">—</span>
+    <div class="bf md"><label>MAX ¥</label><select><option>上限なし</option><option>〜5,000</option><option>〜10,000</option></select></div>
+    <button class="bgo"><i class="ti ti-search" aria-hidden="true"></i> SEARCH</button>
+  </div>
+  <a class="pb" href="[PLANLIST_URL]">PLAN LIST　<span>宿泊プラン一覧を見る</span>　›</a>
+</div>
+
+</div>
+<script>
+function mv(id,dir){var e=document.getElementById(id),s=e.querySelectorAll('.slide'),d=document.getElementById(id+'-dots').querySelectorAll('.dot'),c=parseInt(e.dataset.cur);s[c].classList.remove('on');d[c].classList.remove('on');c=(c+dir+s.length)%s.length;s[c].classList.add('on');d[c].classList.add('on');e.dataset.cur=c;}
+function go(id,idx){var e=document.getElementById(id),s=e.querySelectorAll('.slide'),d=document.getElementById(id+'-dots').querySelectorAll('.dot'),c=parseInt(e.dataset.cur);s[c].classList.remove('on');d[c].classList.remove('on');s[idx].classList.add('on');d[idx].classList.add('on');e.dataset.cur=idx;}
+</script>
+</body>
+</html>
