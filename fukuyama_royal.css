@@ -108,7 +108,7 @@
 #rh01 .rspec dd{font-size:15px;color:#444;padding:6px 10px;border-bottom:1px solid #E8E5E0}
 #rh01 .rspec dt:nth-last-child(2),#rh01 .rspec dd:last-child{border-bottom:none}
 #rh01 .rdesc{font-size:17px;line-height:1.8;color:#555;font-weight:300;margin-bottom:14px}
-#rh01 .planbtn{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;background:#BF0000;color:#fff;font-size:17px;letter-spacing:1.5px;font-weight:300;text-decoration:none}
+#rh01 .planbtn{display:flex;align-items:center;justify-content:center;gap:8px;padding:11px;background:#8B6914;color:#fff;font-size:15px;letter-spacing:1px;font-weight:300;text-decoration:none;margin-top:auto}
 #rh01 .atbl{width:100%;font-size:17px;border-collapse:collapse}
 #rh01 .atbl td{padding:7px 12px;border:1px solid #E8E5E0}
 #rh01 .atbl tr:nth-child(even) td{background:#FAFAF8}
