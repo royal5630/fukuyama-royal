@@ -84,7 +84,7 @@
 #rh01 .hl .cs h4{font-size:14px;font-weight:400;letter-spacing:2px;color:#B8960C;margin-bottom:8px;font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
 #rh01 .hl .cs li{font-size:16px;color:#555;padding:3px 0;font-weight:300;list-style:none;display:flex;gap:8px}
 #rh01 .hl .cs li::before{content:"—";color:#B8960C}
-#rh01 .rdh{background:#1A1614;color:#fff;padding:10px 16px;font-size:19px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:300;letter-spacing:.5px}
+#rh01 .rdh{background:#1C3A5C;color:#fff;padding:10px 16px;font-size:19px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:300;letter-spacing:.5px}
 #rh01 .badge{background:#B8960C;color:#fff;font-size:14px;padding:2px 8px}
 #rh01 .badge-dt{background:#1C3A5C;color:rgba(255,255,255,.8);font-size:14px;padding:2px 8px}
 #rh01 .rdetail{border:1px solid #E8E5E0;margin-bottom:20px;overflow:hidden}
