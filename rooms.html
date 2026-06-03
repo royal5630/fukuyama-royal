@@ -16,11 +16,11 @@
 .room-body{display:grid;grid-template-columns:1fr 1fr}
 .room-left{border-right:1px solid #E8E5E0;display:flex;flex-direction:column}
 /* スライダー：高さ拡大 */
-.rcaro{position:relative;background:#0F2236}
-.slides{height:270px;position:relative;overflow:hidden}
+.rcaro{position:relative;background:#0F2236;flex:1;min-height:290px}
+.slides{height:100%;min-height:290px;position:relative;overflow:hidden}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity .45s ease}
 .slide.on{opacity:1}
-.slide img{width:100%;height:270px;object-fit:cover;display:block;background:#1C3A5C}
+.slide img{width:100%;height:100%;object-fit:cover;display:block;background:#1C3A5C}
 .cbtn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.35);color:#fff;border:none;width:36px;height:54px;font-size:18px;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;transition:background .2s}
 .cbtn:hover{background:rgba(28,58,92,.8)}
 .cprev{left:0}.cnext{right:0}
@@ -133,7 +133,7 @@
         <div class="captions" id="r02-caps"><div class="cap  on">2021年に新設したモデレートバス付シングル室内。まだまだ新しいお部屋です♪</div><div class="cap">2021年に新設したモデレートバス付シングル室内。まだまだ新しいお部屋です♪</div><div class="cap">バス・トイレ</div><div class="cap">浴室のアメニティはポーラのシャンプー・コンディショナー・ボディソープ♪</div></div>
       </div>
       <div class="rinfo">
-        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>11㎡</dd><dt>ベッド</dt><dd>セミダブル×1台</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
+        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>11－14㎡</dd><dt>ベッド</dt><dd>セミダブル×1台</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
         <p class="rdesc">2021年に新設したモデレートバス付シングル。まだまだ新しいお部屋です。ビジネスや一人旅に最適なシンプルで快適な空間をご提供します。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
@@ -153,7 +153,7 @@
         <div class="captions" id="r03-caps"><div class="cap  on">バス付シングルルーム室内</div><div class="cap">バス付シングルルーム室内</div><div class="cap">ユニットバスルーム</div></div>
       </div>
       <div class="rinfo">
-        <dl class="rspec"><dt>定員</dt><dd>1名</dd><dt>広さ</dt><dd>－</dd><dt>ベッド</dt><dd>シングル×1台</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
+        <dl class="rspec"><dt>定員</dt><dd>1名</dd><dt>広さ</dt><dd>11㎡</dd><dt>ベッド</dt><dd>シングル×1台</dd><dt>バス</dt><dd>ユニットバス付き</dd></dl>
         <p class="rdesc">シンプルながらも必要な設備を完備したシングルルーム。ビジネス・一人旅に最適です。リーズナブルに快適な滞在をお楽しみください。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
@@ -161,7 +161,7 @@
   </div>
 
   <div class="rdetail">
-    <div class="rdh">バス無シングル <span class="badge">男女別共用シャワールーム使用</span></div>
+    <div class="rdh">バス無シングル <span class="badge">男女別シャワールーム利用</span></div>
     <div class="room-body">
       <div class="room-left">
         <div class="rcaro" id="r04" data-cur="0">
@@ -173,7 +173,7 @@
         <div class="captions" id="r04-caps"><div class="cap  on">バス無シングルルーム室内</div><div class="cap">バス無シングルルーム室内</div><div class="cap">お手洗いと洗面台はお部屋内に設置</div><div class="cap">女性用共用シャワールーム（2ブース）。カギをお渡ししますので安心してご利用いただけます。</div><div class="cap">男性用共用シャワーブース（2ブース）。お部屋と同一フロアにございます。</div></div>
       </div>
       <div class="rinfo">
-        <dl class="rspec"><dt>定員</dt><dd>1名</dd><dt>広さ</dt><dd>－</dd><dt>ベッド</dt><dd>シングル×1台</dd><dt>バス</dt><dd>共用シャワーブース（3F）</dd></dl>
+        <dl class="rspec"><dt>定員</dt><dd>1名</dd><dt>広さ</dt><dd>11㎡</dd><dt>ベッド</dt><dd>シングル×1台</dd><dt>バス</dt><dd>共用シャワーブース（3F）</dd></dl>
         <p class="rdesc">リーズナブルにご宿泊いただけるバス無しタイプ。お手洗い・洗面台はお部屋内に設置。3階の共用シャワーブース（男女別・2022年リニューアル）をご利用ください。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
@@ -213,7 +213,7 @@
         <div class="captions" id="r06-caps"><div class="cap  on">deTOURスーペリアツイン客室一例</div><div class="cap">deTOURのお部屋は全室フローリング仕様となり靴を脱いでおくつろぎ頂けます。</div><div class="cap">独立洗面台</div><div class="cap">機能的な室内ユニットシャワールーム</div><div class="cap">浴室のアメニティはポーラのシャンプー・コンディショナー・ボディソープ♪</div><div class="cap">deTOUR室内イメージ</div></div>
       </div>
       <div class="rinfo">
-        <dl class="rspec"><dt>定員</dt><dd>2名</dd><dt>広さ</dt><dd>－</dd><dt>ベッド</dt><dd>シングル×2台</dd><dt>バス</dt><dd>ユニットシャワールーム</dd></dl>
+        <dl class="rspec"><dt>定員</dt><dd>2名</dd><dt>広さ</dt><dd>24－25㎡</dd><dt>ベッド</dt><dd>シングル×2台</dd><dt>バス</dt><dd>ユニットシャワールーム</dd></dl>
         <p class="rdesc">こだわりの5Fフロア「deTOUR」のツインルーム。全室フローリング仕様で靴を脱いでおくつろぎいただけます。空気清浄機・サロニアドライヤー・POLAアメニティ・バルミューダ電気ケトル完備。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
@@ -233,7 +233,7 @@
         <div class="captions" id="r07-caps"><div class="cap  on">当館最大の広さのdeTOURデラックスツインルーム室内</div><div class="cap">フローリング仕様となり、靴を脱いでご自宅のようにおくつろぎ頂けます。</div><div class="cap">deTOURデラックスツインルーム室内</div><div class="cap">広々とした洗面台とセパレートの浴室</div><div class="cap">洗面台・お手洗いは浴室とセパレートタイプ</div><div class="cap">浴室のアメニティはポーラのシャンプー・コンディショナー・ボディソープ♪</div><div class="cap">deTOUR室内イメージ</div></div>
       </div>
       <div class="rinfo">
-        <dl class="rspec"><dt>定員</dt><dd>2名（3名可）</dd><dt>広さ</dt><dd>30㎡（当館最大）</dd><dt>ベッド</dt><dd>シングル（100cm）×2台</dd><dt>バス</dt><dd>独立バスルーム（バスタブ付き）</dd></dl>
+        <dl class="rspec"><dt>定員</dt><dd>2名（3名可）</dd><dt>広さ</dt><dd>30㎡</dd><dt>ベッド</dt><dd>シングル（100cm）×2台</dd><dt>バス</dt><dd>独立バスルーム（バスタブ付き）</dd></dl>
         <p class="rdesc">当館最上階（5F）の最大のお部屋。洗面台・お手洗い・浴室はセパレートタイプ。フローリング仕様でご自宅のようにおくつろぎください。空気清浄機・バルミューダ電気ケトル・POLAアメニティ完備。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
@@ -253,7 +253,7 @@
         <div class="captions" id="r08-caps"><div class="cap  on">deTOURモデレートダブル室内一例</div><div class="cap">幅140㎝のダブルベッドを採用。おひとり様でゆったりとご利用も可能です。</div><div class="cap">独立洗面台</div><div class="cap">機能的な室内ユニットシャワールーム</div><div class="cap">浴室のアメニティはポーラのシャンプー・コンディショナー・ボディソープ♪</div><div class="cap">deTOUR室内イメージ</div></div>
       </div>
       <div class="rinfo">
-        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>－</dd><dt>ベッド</dt><dd>ダブル（140cm）×1台</dd><dt>バス</dt><dd>ユニットシャワールーム</dd></dl>
+        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>16.5－20㎡</dd><dt>ベッド</dt><dd>ダブル（140cm）×1台</dd><dt>バス</dt><dd>ユニットシャワールーム</dd></dl>
         <p class="rdesc">5Fのこだわりフロア「deTOUR」のダブルルーム。幅140cmのダブルベッドでおひとり様でもゆったりとご利用いただけます。フローリング・空気清浄機・POLAアメニティ完備。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
@@ -273,7 +273,7 @@
         <div class="captions" id="r09-caps"><div class="cap  on">deTOURデラックスシングルルーム室内</div><div class="cap">deTOURデラックスシングルルーム室内</div><div class="cap">機能的な室内ユニットシャワールーム</div><div class="cap">浴室のアメニティはポーラのシャンプー・コンディショナー・ボディソープ♪</div><div class="cap">deTOUR室内イメージ</div></div>
       </div>
       <div class="rinfo">
-        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>－</dd><dt>ベッド</dt><dd>セミダブル×1台</dd><dt>バス</dt><dd>ユニットシャワールーム</dd></dl>
+        <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>13.5㎡</dd><dt>ベッド</dt><dd>セミダブル×1台</dd><dt>バス</dt><dd>ユニットシャワールーム</dd></dl>
         <p class="rdesc">5Fのこだわりフロア「deTOUR」のシングルルーム。フローリング・空気清浄機・サロニアドライヤー・POLAアメニティ・バルミューダ電気ケトルでワンランク上の滞在をお楽しみください。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
