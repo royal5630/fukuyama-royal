@@ -297,5 +297,42 @@
 <a class="pb" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?&f_teikei=&f_nen1=&f_tuki1=&f_hi1=&f_nen2=&f_tuki2=&f_hi2=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1" target="_top">PLAN LIST　<span>宿泊プラン一覧を見る</span>　›</a>
 
 </div>
+<script>
+var timers={};
+function mv(id,dir){
+  var caro=document.getElementById(id);
+  var slides=caro.querySelectorAll('.slide');
+  var dots=document.getElementById(id+'-dots');
+  var cur=parseInt(caro.dataset.cur)||0;
+  slides[cur].classList.remove('on');
+  if(dots)dots.querySelectorAll('.dot')[cur].classList.remove('on');
+  cur=(cur+dir+slides.length)%slides.length;
+  slides[cur].classList.add('on');
+  if(dots)dots.querySelectorAll('.dot')[cur].classList.add('on');
+  caro.dataset.cur=cur;
+  resetTimer(id);
+}
+function go(id,idx){
+  var caro=document.getElementById(id);
+  var slides=caro.querySelectorAll('.slide');
+  var dots=document.getElementById(id+'-dots');
+  var cur=parseInt(caro.dataset.cur)||0;
+  slides[cur].classList.remove('on');
+  if(dots)dots.querySelectorAll('.dot')[cur].classList.remove('on');
+  slides[idx].classList.add('on');
+  if(dots)dots.querySelectorAll('.dot')[idx].classList.add('on');
+  caro.dataset.cur=idx;
+  resetTimer(id);
+}
+function resetTimer(id){
+  clearInterval(timers[id]);
+  timers[id]=setInterval(function(){mv(id,1);},3000);
+}
+function initAll(){
+  var caros=document.querySelectorAll('.rcaro');
+  caros.forEach(function(c){resetTimer(c.id);});
+}
+window.addEventListener('load',initAll);
+</script>
 </body>
 </html>
