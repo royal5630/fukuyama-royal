@@ -3,16 +3,16 @@
 #rh01 a{text-decoration:none;color:inherit}
 #rh01 img{display:block;width:100%;object-fit:cover;background:#EBEBEB}
 
-#rh01 .nv{display:flex;border-bottom:1px solid #E0DDD8}
-#rh01 .nv a{flex:1;text-align:center;padding:12px 2px 10px;border-right:1px solid #E0DDD8;border-bottom:2px solid transparent}
+#rh01 .nv{display:flex;background:#1C3A5C}
+#rh01 .nv a{flex:1;text-align:center;padding:12px 2px 10px;border-right:1px solid rgba(255,255,255,.1);border-bottom:2px solid transparent;color:rgba(255,255,255,.75);transition:background .15s,color .15s}
 #rh01 .nv a:last-child{border-right:none}
-#rh01 .nv a.on{border-bottom-color:#1C3A5C;background:#F0F4F8}
-#rh01 .nv .e{display:block;font-size:16px;font-weight:400;letter-spacing:2.5px;color:#BBB;margin-bottom:3px}
-#rh01 .nv .j{display:block;font-size:16px;color:#666;font-weight:300}
-#rh01 .nv a.on .e{color:#1C3A5C}
-#rh01 .nv a.on .j{color:#1C3A5C;font-weight:500}
+#rh01 .nv a:hover{background:rgba(255,255,255,.1);color:#fff}
+#rh01 .nv a.on{border-bottom-color:#B8960C;color:#fff}
+#rh01 .nv .e{display:block;font-size:16px;font-weight:400;margin-bottom:2px}
+#rh01 .nv .j{display:block;font-size:14px;font-weight:400}
 
-#rh01 .sr{background:#F0F4F8;border-top:2px solid #1C3A5C;border-bottom:1px solid #D0D8E4;padding:8px 16px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:6px}
+#rh01 .sr{background:#F0F4F8;border-top:3px solid #B8960C;border-bottom:2px solid #B8960C;padding:10px 16px 12px;box-shadow:0 3px 10px rgba(184,150,12,.12);display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:6px}
+#rh01 .sr-head{width:100%;font-size:14px;color:#B8960C;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;margin-bottom:5px}
 #rh01 .srl{font-size:16px;font-weight:400;letter-spacing:2px;color:#B8960C;border-right:1px solid #E0DDD8;padding-right:10px}
 #rh01 .srl small{display:block;font-weight:300;color:#6A8CAA;font-size:14px;letter-spacing:.5px}
 #rh01 .sf{display:flex;flex-direction:column;gap:2px}
@@ -32,9 +32,9 @@
 #rh01 .mvc p{font-size:18px;margin-top:6px;opacity:.8;font-weight:300;letter-spacing:.5px}
 
 #rh01 .sec{margin:18px 18px 20px}
-#rh01 .sh{font-size:22px;font-weight:400;letter-spacing:1px;color:#333;border-bottom:1px solid #E8E5E0;padding-bottom:10px;margin-bottom:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-#rh01 .sh .se{color:#B8960C;font-family:"Hiragino Mincho ProN","Yu Mincho","MS Mincho",serif;font-weight:400;letter-spacing:5px}
-#rh01 .sh .sj{font-size:17px;color:#AAA;font-weight:300;letter-spacing:.5px}
+#rh01 .sh{margin-bottom:14px;border-left:4px solid #B8960C;background:linear-gradient(90deg,rgba(28,58,92,.08),rgba(28,58,92,0));padding:10px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-radius:0 4px 4px 0}
+#rh01 .sh .se{color:#1C3A5C;font-weight:500;}
+#rh01 .sh .sj{font-size:15px;color:#6A8CAA;font-weight:300;}
 
 #rh01 .fl{display:grid;grid-template-columns:1fr 1fr;list-style:none;border-top:1px solid #E8E5E0;padding:0}
 #rh01 .fl li{font-size:15px;padding:14px 10px;border-bottom:1px solid #EDEAE5;border-right:1px solid #EDEAE5;display:flex;align-items:flex-start;gap:12px;font-weight:300;color:#444;line-height:1.5}
@@ -51,14 +51,17 @@
 #rh01 .ln{display:inline-block;font-size:14px;padding:2px 7px;margin-bottom:5px;border:1px solid;letter-spacing:.5px;font-weight:400}
 #rh01 .new{background:#F0F7F1;color:#2E7D32;border-color:#A5D6A7}
 #rh01 .ldt{background:#FFF8F0;color:#BF5000;border-color:#FFCC80}
-#rh01 .rl{margin-left:auto;padding:5px 12px;border:1px solid #B8960C;color:#B8960C;font-size:16px;letter-spacing:1.5px;font-weight:400}
+#rh01 .rl{padding:5px 13px;border:1.5px solid #B8960C;color:#B8960C;font-size:14px;font-weight:500;white-space:nowrap;transition:background .15s,color .15s}
+#rh01 .rl:hover{background:#B8960C;color:#fff}
 #rh01 .pr{display:flex;align-items:center;justify-content:space-between;background:#1A1614;color:#fff;padding:13px 18px;border-left:3px solid #B8960C}
 #rh01 .pre{font-size:19px;font-weight:300;letter-spacing:4px;display:block}
 #rh01 .prj{font-size:16px;color:rgba(255,255,255,.45);display:block;letter-spacing:.5px;margin-top:2px;font-weight:300}
 #rh01 .pra{color:#B8960C;font-size:28px;font-weight:200}
 
 #rh01 .bn{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #E0DDD8;margin-top:18px}
-#rh01 .bb{display:block;padding:13px 16px;font-size:19px;background:#F0F4F8;color:#1C3A5C;border-right:1px solid #C5D3E0;font-weight:300}
+#rh01 .bb{display:block;transition:background .15s,color .15s;padding:13px 16px;font-size:19px;background:#F0F4F8;color:#1C3A5C;border-right:1px solid #C5D3E0;font-weight:300}
+#rh01 .bb:first-child:hover{background:#1C3A5C;color:#fff}
+#rh01 .bb:last-child:hover{background:#0F2236;color:#fff}
 #rh01 .bb:last-child{border-right:none;background:#1C3A5C;color:#fff;text-align:right}
 #rh01 .bb .d{font-size:16px;color:#6A8CAA;display:block;margin-bottom:3px;letter-spacing:1px}
 #rh01 .bb:last-child .d{color:rgba(255,255,255,.45)}
@@ -75,7 +78,8 @@
 #rh01 .bf.md select{width:98px}
 #rh01 .bgo{background:#1C3A5C;color:#fff;border:none;height:30px;padding:0 18px;font-size:15px;letter-spacing:2.5px;align-self:flex-end;font-weight:400;border-bottom:2px solid #0F2438;display:flex;align-items:center;gap:6px;cursor:pointer;transition:background .25s,letter-spacing .25s,border-bottom-color .25s}
 #rh01 .bgo:hover{background:#2B5480;border-bottom-color:#1C3A5C;letter-spacing:4px}
-#rh01 .pb{display:flex;align-items:center;justify-content:center;gap:10px;background:#B8960C;color:#fff;padding:13px 0;margin-top:12px;font-size:20px;font-weight:300;letter-spacing:5px}
+#rh01 .pb{display:flex;align-items:center;justify-content:center;gap:10px;background:#B8960C;color:#fff;padding:13px 0;margin-top:12px;font-size:20px;font-weight:300;transition:background .2s,color .2s;letter-spacing:5px}
+#rh01 .pb:hover{background:#1C3A5C;color:#B8960C}
 #rh01 .pb span{font-size:17px;font-weight:300;opacity:.75;letter-spacing:.5px}
 #rh01 .hl{background:#FAFAF8;border:1px solid #E8E5E0;border-left:3px solid #B8960C;padding:16px 18px;margin-bottom:16px}
 #rh01 .hl h3{font-size:20px;font-weight:400;color:#333;margin-bottom:10px}
