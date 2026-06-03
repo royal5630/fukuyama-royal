@@ -30,7 +30,7 @@
 .dot.on{background:#B8960C;transform:scale(1.3)}
 .dot:hover{background:rgba(255,255,255,.5)}
 /* キャプション：2行分固定 */
-#rh01 .captions{background:#1C3A5C;padding:8px 14px;height:52px;overflow:hidden}
+#rh01 .captions{background:#1C3A5C;padding:6px 14px;height:35px;overflow:hidden}
 .cap{font-size:13px;color:rgba(255,255,255,.6);font-weight:300;line-height:1.6;display:none;overflow:hidden}
 .cap.on{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 /* 右側：高さ統一 */
@@ -65,6 +65,8 @@
 .bb:last-child{border-right:none;background:#1C3A5C;color:#fff;text-align:right}
 .bb .d{font-size:16px;color:#6A8CAA;display:block;margin-bottom:3px;letter-spacing:1px}
 .bb:last-child .d{color:rgba(255,255,255,.45)}
+.pb{display:flex;align-items:center;justify-content:center;gap:10px;background:#B8960C;color:#fff;padding:13px 0;margin-top:12px;font-size:20px;font-weight:300}
+.pb span{font-size:17px;opacity:.75}
 </style>
 </head>
 <body style="margin:0;background:#F5F4F0">
@@ -119,7 +121,7 @@
   </div>
 
   <div class="rdetail">
-    <div class="rdh">モデレートバス付シングル </div>
+    <div class="rdh">モデレートバス付シングル <span class="badge">2021年改装</span></div>
     <div class="room-body">
       <div class="room-left">
         <div class="rcaro" id="r02" data-cur="0">
@@ -159,7 +161,7 @@
   </div>
 
   <div class="rdetail">
-    <div class="rdh">バス無シングル </div>
+    <div class="rdh">バス無シングル <span class="badge">男女別共用シャワールーム使用</span></div>
     <div class="room-body">
       <div class="room-left">
         <div class="rcaro" id="r04" data-cur="0">
@@ -199,7 +201,7 @@
   </div>
 
   <div class="rdetail">
-    <div class="rdh">deTOURスーペリアツイン <span class="badge-dt">deTOUR 5F</span></div>
+    <div class="rdh">deTOURスーペリアツイン <span class="badge">2021年改装</span> <span class="badge">フローリング</span></div>
     <div class="room-body">
       <div class="room-left">
         <div class="rcaro" id="r06" data-cur="0">
@@ -219,7 +221,7 @@
   </div>
 
   <div class="rdetail">
-    <div class="rdh">deTOURデラックスツイン <span class="badge-dt">deTOUR 5F</span> <span class="badge">バスタブ付き</span></div>
+    <div class="rdh">deTOURデラックスツイン <span class="badge">2021年改装</span> <span class="badge">フローリング</span></div>
     <div class="room-body">
       <div class="room-left">
         <div class="rcaro" id="r07" data-cur="0">
@@ -239,7 +241,7 @@
   </div>
 
   <div class="rdetail">
-    <div class="rdh">deTOURモデレートダブル <span class="badge-dt">deTOUR 5F</span></div>
+    <div class="rdh">deTOURモデレートダブル <span class="badge">2021年改装</span> <span class="badge">フローリング</span></div>
     <div class="room-body">
       <div class="room-left">
         <div class="rcaro" id="r08" data-cur="0">
@@ -259,7 +261,7 @@
   </div>
 
   <div class="rdetail">
-    <div class="rdh">deTOURデラックスシングル <span class="badge-dt">deTOUR 5F</span></div>
+    <div class="rdh">deTOURデラックスシングル <span class="badge">2021年改装</span> <span class="badge">フローリング</span></div>
     <div class="room-body">
       <div class="room-left">
         <div class="rcaro" id="r09" data-cur="0">
@@ -292,24 +294,8 @@
   <a class="bb" href="https://travel.rakuten.co.jp/HOTEL/1535/CUSTOM/G1535260521133203.html"><span class="d">NEXT →</span>朝食夕食へ</a>
 </div>
 
-<div class="bs">
-  <div class="bsl">VACANCY SEARCH　空室・料金を検索</div>
-  <div class="bfr">
-    <div class="bf dt"><label>CHECK IN</label><input type="date"></div><span class="sp">→</span>
-    <div class="bf dt"><label>CHECK OUT</label><input type="date"></div>
-    <div class="bf sm"><label>ROOMS</label><select><option>1室</option><option>2室</option><option>3室</option><option>4室</option><option>5室</option><option>6室</option><option>7室</option><option>8室</option><option>9室</option><option>10室</option></select></div>
-    <div class="bf sm"><label>大人</label><select><option>1名</option><option>2名</option><option>3名</option></select></div><div class="bf sm"><label>子供</label><select><option>0名</option><option>1名</option><option>2名</option><option>3名</option></select></div>
-    <div class="bf md"><label>MIN ¥</label><select><option>下限なし</option><option>1,000〜</option><option>2,000〜</option><option>3,000〜</option><option>4,000〜</option><option>5,000〜</option><option>6,000〜</option><option>7,000〜</option><option>8,000〜</option><option>9,000〜</option><option>10,000〜</option><option>12,000〜</option><option>14,000〜</option><option>16,000〜</option><option>18,000〜</option><option>20,000〜</option><option>30,000〜</option><option>40,000〜</option><option>50,000〜</option></select></div><span class="sp">—</span>
-    <div class="bf md"><label>MAX ¥</label><select><option>上限なし</option><option>〜1,000</option><option>〜2,000</option><option>〜3,000</option><option>〜4,000</option><option>〜5,000</option><option>〜6,000</option><option>〜7,000</option><option>〜8,000</option><option>〜9,000</option><option>〜10,000</option><option>〜12,000</option><option>〜14,000</option><option>〜16,000</option><option>〜18,000</option><option>〜20,000</option><option>〜30,000</option><option>〜40,000</option><option>〜50,000</option><option>〜60,000</option><option>〜70,000</option><option>〜80,000</option><option>〜90,000</option><option>〜100,000</option></select></div>
-    <button class="bgo"><i class="ti ti-search" aria-hidden="true"></i> SEARCH</button>
-  </div>
-  <a class="pb" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1">PLAN LIST　<span>宿泊プラン一覧を見る</span>　›</a>
-</div>
-</div>
+<a class="pb" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1">PLAN LIST　<span>宿泊プラン一覧を見る</span>　›</a>
 
-<script>
-function mv(id,dir){var e=document.getElementById(id),s=e.querySelectorAll('.slide'),d=document.getElementById(id+'-dots').querySelectorAll('.dot'),caps=document.getElementById(id+'-caps'),c=caps?caps.querySelectorAll('.cap'):[],cur=parseInt(e.dataset.cur);s[cur].classList.remove('on');d[cur].classList.remove('on');if(c[cur])c[cur].classList.remove('on');cur=(cur+dir+s.length)%s.length;s[cur].classList.add('on');d[cur].classList.add('on');if(c[cur])c[cur].classList.add('on');e.dataset.cur=cur;}
-function go(id,idx){var e=document.getElementById(id),s=e.querySelectorAll('.slide'),d=document.getElementById(id+'-dots').querySelectorAll('.dot'),caps=document.getElementById(id+'-caps'),c=caps?caps.querySelectorAll('.cap'):[],cur=parseInt(e.dataset.cur);s[cur].classList.remove('on');d[cur].classList.remove('on');if(c[cur])c[cur].classList.remove('on');s[idx].classList.add('on');d[idx].classList.add('on');if(c[idx])c[idx].classList.add('on');e.dataset.cur=idx;}
-</script>
+</div>
 </body>
 </html>
