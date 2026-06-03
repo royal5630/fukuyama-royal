@@ -18,9 +18,9 @@
 #rh01 .sf{display:flex;flex-direction:column;gap:2px}
 #rh01 .sf label{font-size:12px;color:#AAA;letter-spacing:1px}
 #rh01 .sf input,#rh01 .sf select{height:26px;padding:0 6px;border:1px solid #C5D3E0;border-radius:0;font-size:18px;background:#fff;color:#444}
-#rh01 .sf.dt input{width:90px}
+#rh01 .sf.dt input{width:130px}
 #rh01 .sf.sm select{width:54px}
-#rh01 .sf.md select{width:78px}
+#rh01 .sf.md select{width:98px}
 #rh01 .sp{color:#CCC;align-self:flex-end;padding-bottom:4px;font-size:18px}
 #rh01 .srb{background:#1C3A5C;color:#fff;border:none;height:30px;padding:0 18px;font-size:15px;letter-spacing:2.5px;font-weight:400;align-self:flex-end;white-space:nowrap;border-bottom:2px solid #0F2438;display:flex;align-items:center;gap:6px;cursor:pointer;transition:background .25s,letter-spacing .25s,border-bottom-color .25s}
 #rh01 .srb:hover{background:#2B5480;border-bottom-color:#1C3A5C;letter-spacing:4px}
@@ -58,7 +58,7 @@
 #rh01 .pra{color:#B8960C;font-size:28px;font-weight:200}
 
 #rh01 .bn{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #E0DDD8;margin-top:18px}
-#rh01 .bb{padding:13px 16px;font-size:19px;background:#F0F4F8;color:#1C3A5C;border-right:1px solid #C5D3E0;font-weight:300}
+#rh01 .bb{display:block;padding:13px 16px;font-size:19px;background:#F0F4F8;color:#1C3A5C;border-right:1px solid #C5D3E0;font-weight:300}
 #rh01 .bb:last-child{border-right:none;background:#1C3A5C;color:#fff;text-align:right}
 #rh01 .bb .d{font-size:16px;color:#6A8CAA;display:block;margin-bottom:3px;letter-spacing:1px}
 #rh01 .bb:last-child .d{color:rgba(255,255,255,.45)}
@@ -70,9 +70,9 @@
 #rh01 .bf{display:flex;flex-direction:column;gap:2px}
 #rh01 .bf label{font-size:12px;color:#AAA;letter-spacing:1px}
 #rh01 .bf input,#rh01 .bf select{height:26px;padding:0 6px;border:1px solid #C5D3E0;font-size:18px;background:#fff;color:#444}
-#rh01 .bf.dt input{width:90px}
+#rh01 .bf.dt input{width:130px}
 #rh01 .bf.sm select{width:54px}
-#rh01 .bf.md select{width:78px}
+#rh01 .bf.md select{width:98px}
 #rh01 .bgo{background:#1C3A5C;color:#fff;border:none;height:30px;padding:0 18px;font-size:15px;letter-spacing:2.5px;align-self:flex-end;font-weight:400;border-bottom:2px solid #0F2438;display:flex;align-items:center;gap:6px;cursor:pointer;transition:background .25s,letter-spacing .25s,border-bottom-color .25s}
 #rh01 .bgo:hover{background:#2B5480;border-bottom-color:#1C3A5C;letter-spacing:4px}
 #rh01 .pb{display:flex;align-items:center;justify-content:center;gap:10px;background:#B8960C;color:#fff;padding:13px 0;margin-top:12px;font-size:20px;font-weight:300;letter-spacing:5px}
