@@ -16,8 +16,8 @@
 .room-body{display:grid;grid-template-columns:1fr 1fr}
 .room-left{border-right:1px solid #E8E5E0;display:flex;flex-direction:column}
 /* スライダー：高さ拡大 */
-.rcaro{position:relative;background:#0F2236;flex:1;min-height:290px}
-.slides{height:100%;min-height:290px;position:relative;overflow:hidden}
+.rcaro{position:relative;background:#0F2236;flex:1;min-height:320px}
+.slides{height:100%;min-height:320px;position:relative;overflow:hidden}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity .45s ease}
 .slide.on{opacity:1}
 .slide img{width:100%;height:100%;object-fit:cover;display:block;background:#1C3A5C}
@@ -41,7 +41,7 @@
 .rspec dd{font-size:14px;color:#444;padding:7px 10px;border-bottom:1px solid #E8E5E0;margin:0}
 .rspec dt:nth-last-child(2),.rspec dd:last-child{border-bottom:none}
 /* 説明文：4行分固定 */
-.rdesc{font-size:15px;line-height:1.8;color:#555;font-weight:300;margin-bottom:12px;height:calc(15px * 1.8 * 4);overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical}
+.rdesc{font-size:15px;line-height:1.8;color:#555;font-weight:300;margin-bottom:12px;height:calc(15px * 1.8 * 5);overflow:hidden;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical}
 /* プランボタン：シックなネイビーゴールド */
 .planbtn{display:flex;align-items:center;justify-content:center;gap:8px;padding:11px;background:#8B6914;color:#fff;font-size:15px;letter-spacing:1px;font-weight:300;text-decoration:none;margin-top:auto}
 .planbtn i{font-size:18px}
@@ -62,9 +62,9 @@
 .hl .cs li::before{content:"—";color:#B8960C}
 .bn{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #C5D3E0;margin-top:18px}
 .bb{padding:13px 16px;font-size:19px;background:#F0F4F8;color:#1C3A5C;border-right:1px solid #C5D3E0;font-weight:300}
-.bb:last-child{border-right:none;background:#1C3A5C;color:#fff;text-align:right}
+.bb:last-child{border-right:none;text-align:right}
+.bb:last-child:hover{background:#1C3A5C;color:#fff}
 .bb .d{font-size:16px;color:#6A8CAA;display:block;margin-bottom:3px;letter-spacing:1px}
-.bb:last-child .d{color:rgba(255,255,255,.45)}
 .pb{display:flex;align-items:center;justify-content:center;gap:10px;background:#B8960C;color:#fff;padding:13px 0;margin-top:12px;font-size:20px;font-weight:300}
 .pb span{font-size:17px;opacity:.75}
 </style>
@@ -174,7 +174,7 @@
       </div>
       <div class="rinfo">
         <dl class="rspec"><dt>定員</dt><dd>1名</dd><dt>広さ</dt><dd>11㎡</dd><dt>ベッド</dt><dd>シングル×1台</dd><dt>バス</dt><dd>共用シャワーブース（3F）</dd></dl>
-        <p class="rdesc">リーズナブルにご宿泊いただけるバス無しタイプ。お手洗い・洗面台はお部屋内に設置。3階の共用シャワーブース（男女別・2022年リニューアル）をご利用ください。</p>
+        <p class="rdesc">リーズナブルにご宿泊いただけるバス無しタイプ。お手洗い・洗面台はお部屋内に設置。入浴は同一フロアの共用シャワーブース（男女別・2022年リニューアル）をご利用ください。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?&f_teikei=&f_nen1=&f_tuki1=&f_hi1=&f_nen2=&f_tuki2=&f_hi2=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1" target="_top"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
     </div>
@@ -214,7 +214,7 @@
       </div>
       <div class="rinfo">
         <dl class="rspec"><dt>定員</dt><dd>2名</dd><dt>広さ</dt><dd>24－25㎡</dd><dt>ベッド</dt><dd>シングル×2台</dd><dt>バス</dt><dd>ユニットシャワールーム</dd></dl>
-        <p class="rdesc">こだわりの5Fフロア「deTOUR」のツインルーム。全室フローリング仕様で靴を脱いでおくつろぎいただけます。空気清浄機・サロニアドライヤー・POLAアメニティ・バルミューダ電気ケトル完備。</p>
+        <p class="rdesc">こだわりの5Fフロア「deTOUR」のツインルーム。全室フローリング仕様で靴を脱いでおくつろぎいただけます。こだわりの家具・家電を設置しワンランク上のご滞在をお楽しみ頂けます。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?&f_teikei=&f_nen1=&f_tuki1=&f_hi1=&f_nen2=&f_tuki2=&f_hi2=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1" target="_top"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
     </div>
@@ -234,7 +234,7 @@
       </div>
       <div class="rinfo">
         <dl class="rspec"><dt>定員</dt><dd>2名（3名可）</dd><dt>広さ</dt><dd>30㎡</dd><dt>ベッド</dt><dd>シングル（100cm）×2台</dd><dt>バス</dt><dd>独立バスルーム（バスタブ付き）</dd></dl>
-        <p class="rdesc">当館最上階（5F）の最大のお部屋。洗面台・お手洗い・浴室はセパレートタイプ。フローリング仕様でご自宅のようにおくつろぎください。空気清浄機・バルミューダ電気ケトル・POLAアメニティ完備。</p>
+        <p class="rdesc">当館最上階（5F）の最大のお部屋。洗面台・お手洗い・浴室はセパレートタイプ。フローリング仕様でご自宅のようにおくつろぎください。こだわりの家具・家電を設置しワンランク上のご滞在をお楽しみ頂けます。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?&f_teikei=&f_nen1=&f_tuki1=&f_hi1=&f_nen2=&f_tuki2=&f_hi2=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1" target="_top"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
     </div>
@@ -254,7 +254,7 @@
       </div>
       <div class="rinfo">
         <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>16.5－20㎡</dd><dt>ベッド</dt><dd>ダブル（140cm）×1台</dd><dt>バス</dt><dd>ユニットシャワールーム</dd></dl>
-        <p class="rdesc">5Fのこだわりフロア「deTOUR」のダブルルーム。幅140cmのダブルベッドでおひとり様でもゆったりとご利用いただけます。フローリング・空気清浄機・POLAアメニティ完備。</p>
+        <p class="rdesc">5Fのこだわりフロア「deTOUR」のダブルルーム。幅140cmのダブルベッドでおひとり様でもゆったりとご利用いただけます。こだわりの家具・家電を設置しワンランク上のご滞在をお楽しみ頂けます。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?&f_teikei=&f_nen1=&f_tuki1=&f_hi1=&f_nen2=&f_tuki2=&f_hi2=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1" target="_top"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
     </div>
@@ -274,7 +274,7 @@
       </div>
       <div class="rinfo">
         <dl class="rspec"><dt>定員</dt><dd>1〜2名</dd><dt>広さ</dt><dd>13.5㎡</dd><dt>ベッド</dt><dd>セミダブル×1台</dd><dt>バス</dt><dd>ユニットシャワールーム</dd></dl>
-        <p class="rdesc">5Fのこだわりフロア「deTOUR」のシングルルーム。フローリング・空気清浄機・サロニアドライヤー・POLAアメニティ・バルミューダ電気ケトルでワンランク上の滞在をお楽しみください。</p>
+        <p class="rdesc">5Fのこだわりフロア「deTOUR」のシングルルーム。こだわりの家具・家電を設置しワンランク上のご滞在をお楽しみ頂けます。</p>
         <a class="planbtn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/1535?&f_teikei=&f_nen1=&f_tuki1=&f_hi1=&f_nen2=&f_tuki2=&f_hi2=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_flg=PLAN&f_static=1" target="_top"><i class="ti ti-calendar" aria-hidden="true"></i>おすすめプランはこちら</a>
       </div>
     </div>
