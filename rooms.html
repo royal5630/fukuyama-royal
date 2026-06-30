@@ -303,12 +303,15 @@ function mv(id,dir){
   var caro=document.getElementById(id);
   var slides=caro.querySelectorAll('.slide');
   var dots=document.getElementById(id+'-dots');
+  var caps=document.getElementById(id+'-caps');
   var cur=parseInt(caro.dataset.cur)||0;
   slides[cur].classList.remove('on');
   if(dots)dots.querySelectorAll('.dot')[cur].classList.remove('on');
+  if(caps)caps.querySelectorAll('.cap')[cur].classList.remove('on');
   cur=(cur+dir+slides.length)%slides.length;
   slides[cur].classList.add('on');
   if(dots)dots.querySelectorAll('.dot')[cur].classList.add('on');
+  if(caps)caps.querySelectorAll('.cap')[cur].classList.add('on');
   caro.dataset.cur=cur;
   resetTimer(id);
 }
@@ -316,11 +319,14 @@ function go(id,idx){
   var caro=document.getElementById(id);
   var slides=caro.querySelectorAll('.slide');
   var dots=document.getElementById(id+'-dots');
+  var caps=document.getElementById(id+'-caps');
   var cur=parseInt(caro.dataset.cur)||0;
   slides[cur].classList.remove('on');
   if(dots)dots.querySelectorAll('.dot')[cur].classList.remove('on');
+  if(caps)caps.querySelectorAll('.cap')[cur].classList.remove('on');
   slides[idx].classList.add('on');
   if(dots)dots.querySelectorAll('.dot')[idx].classList.add('on');
+  if(caps)caps.querySelectorAll('.cap')[idx].classList.add('on');
   caro.dataset.cur=idx;
   resetTimer(id);
 }
